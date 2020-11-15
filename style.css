@@ -1,0 +1,325 @@
+* {
+    margin: 0%;
+}
+
+body {
+    background-color: rgb(0, 68, 255);
+}
+
+header {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    font-size: 8vh;
+}
+
+.container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.boxPalavras {
+    height: 80vh;
+    width: 70%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coluna {
+    background-color: rgba(0, 255, 234, 0.548);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bloco {
+    height: 4vh;
+    width: 2vw;
+    border: black solid 1px;
+    background-color: rgb(0, 17, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    animation: efeitoBloco1 linear 4s ,efeitoBloco linear 1s alternate infinite ;
+}
+@keyframes efeitoBloco {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes efeitoBloco1 {
+    from {
+        transform: rotate(1000deg);
+        margin-right: 4%;
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+#time {
+    background-color: black;
+    height: 10vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15vh;
+    animation: timeAnime 1s alternate infinite;
+}
+@keyframes timeAnime{
+0% {
+    color: rgb(179, 255, 0);
+
+}
+25% {
+    color: blue;
+}
+50% {
+    color: red;
+}
+75% {
+    color: greenyellow;
+}
+100% {
+    color: purple;
+}
+}
+
+
+.boxPerguntas {
+    margin-top: 11%;
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+}
+
+.perguntas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(17, 0, 255);
+    height: 100%;
+    width: 100%;
+}
+
+.perguntas button {
+    background-color: blue;
+    border: cyan solid 2px;
+    border-radius: 4vh;
+    outline: none;
+}
+
+.perguntas button:hover {
+    opacity: 0.3;
+}
+
+#cpu {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#ula {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#regis {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#ram {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#rom {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#eprom {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#flash {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#memo {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#dma {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#cs {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#data {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#adress {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#i5 {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#i7 {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#dual {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#quad {
+    border: white solid 1px;
+    background-color: black;
+}
+
+#frase {
+    font-size: 4vh;
+    color: yellow;
+}
+.paiCoration{
+    display: flex;
+    background-color: darkblue;
+}
+.coration{
+    height: 4vh;
+}
+.aparecer {
+    transition: 2s;
+    color: cyan;
+    animation: none;
+}
+input{
+    background-color: black;
+    border-radius: 4vh;
+    color: cyan;
+}
+input::placeholder{
+    color: yellow;
+}
+@keyframes efeitoLetras {
+    0% {
+        color: rgb(179, 255, 0);
+        transform: rotate(60deg);
+        transform: scale(1.1);
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: red;
+    }
+    75% {
+        color: greenyellow;
+    }
+    100% {
+        color: purple;
+    }
+}
+
+.perdeu {
+    border-radius: 45vh;
+    top: 20%;
+    height: 40%;
+    width: 40%;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 30%;
+    animation: movPerdeu 8s infinite alternate;
+    transform: rotateY(180deg);
+}
+
+.perdeu h1 {
+    margin-bottom: 10vh;
+    font-size:8vh;
+    transform: rotateY(180deg);
+}
+
+.perdeu h1, .perdeu button {
+    position: absolute;
+    transform: rotateY(180deg);
+}
+.imgPerdeu{
+    height: 50vh;
+}
+@keyframes movPerdeu {
+    from {
+        color: black;
+        left: 0%
+    }
+    to {
+        color: red;
+        left: 55%
+    }
+}
+
+.perdeu button {
+    background-color: red;
+    font-size: 2vh;
+    height: 4vh;
+}
+.protecaoDeTela{
+    display: flex;
+    justify-content: center;
+    font-size: 12vh;
+    color: rgb(0, 4, 255);
+    align-items: center;
+    top: 8%;
+    position: absolute;
+    height:70vh ;
+    width: 94%;
+    background-size: cover;
+    border-right: black solid 20px;
+    border-left: black solid 20px;
+    border-bottom: black solid 20px;
+    background-color: rgba(0, 255, 255, 0.253);
+    animation: protect 0.5s alternate infinite;
+}
+@keyframes protect{
+    from{
+        color: darkblue;
+    }
+    to{
+        color: red;
+    }
+}
